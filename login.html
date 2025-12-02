@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="header-left">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastrar</a></li>
+                <li><a href="menu.html">O Menu</a></li>
+                <li><a href="about.html">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="titulo">GameEpic</h1>
+
+        <div class="header-right">
+            <!-- botão de tema e logo ficam dentro do mesmo container no canto direito -->
+            <button id="theme-toggle" class="theme-btn" aria-label="Alternar tema">🌓</button>
+            <img src="https://img.casinomentor.com/casino-logo/epic-win-casino.png" alt="Logo do Site" class="logo">
+        </div>
+    </header>
+
+    <main>
+        <h2>Login do GameEpic</h2>
+
+        <div class="geral">
+            <form action="login.php" method="POST">
+                <p>Insira seu usuário e senha</p>
+
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <button type="submit" class="botao">Entrar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 GameEpic. Todos os direitos reservados.</p>
+    </footer>
+
+    <audio id="musica" loop preload="auto">
+        <source src="song3.mp3" type="audio/mp3">
+    </audio>
+    
+    <button id="playMusic">🎵 Música</button>
+    
+    <script src="music.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
